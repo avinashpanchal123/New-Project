@@ -22,6 +22,7 @@ function Counter() {
 
 
      const setLimits = ()=>{
+         setCount(min)
          setNewLimits(minMax);
         console.log(newLimits);
         setMinMax(initState)
