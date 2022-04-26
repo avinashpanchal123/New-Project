@@ -2,19 +2,18 @@ import React, { useState } from 'react'
 import "./counter.css"
 
 let initState = {
-    min : "",
+  
     max : ""
 }
 
 
 function Counter() {
      const [count ,setCount] = useState(1);
-     const [minMax, setMinMax] = useState(initState);
+     const [maximum, setMaximum] = useState(initState);
      const [newLimits, setNewLimits] = useState("");
 
-
-
-     let {min , max}  = minMax;
+     let { max} = maximum;
+    
 
      const handleCount = (value)=>{
          setCount( count + value)
@@ -22,18 +21,16 @@ function Counter() {
 
 
      const setLimits = ()=>{
-         setCount(min)
-         setNewLimits(minMax);
-        console.log(newLimits);
-        setMinMax(initState)
+         setCount(+max)
+        setMaximum(initState)
      }
 
      const handleChange = (e)=>{
          let { name , value} = e.target;
 
-         let newLimits = {...minMax, [name] : value}
+         let newLimits = {...max, [name] : value}
 
-         setMinMax(newLimits)
+         setMaximum(newLimits)
 
          console.log(name, value);
      }
@@ -43,17 +40,12 @@ function Counter() {
 
         <div className="min_max_container">
        
-            <input className='min_max_input'
-            value={min}
-            onChange= {handleChange}
-            name = "min"
-            placeholder='min'
-            type="text" />
-             <span>&nbsp; &nbsp;</span>
+         
             <input className='min_max_input'
             value={max}
             onChange= {handleChange}
             name = "max"
+            autoComplete='off'
             placeholder='max'
             type="text" />
 
