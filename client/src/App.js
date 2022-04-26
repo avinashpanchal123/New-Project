@@ -1,9 +1,10 @@
 import React from 'react';
+import Counter from './components/counter/Counter';
 
 function App() {
   return (
    <>
-   <h1>Hello I am Ao</h1>
+   <Counter/>
    </>
   )
 }

@@ -1,0 +1,78 @@
+
+.counter_container{
+    width: 100%;
+    text-align: center;
+   
+}
+.min_max_container{
+    margin-bottom: 2rem;
+}
+.min_max_input{
+    width: 3rem;
+    height: 2rem;
+    border: 0.01rem solid brown;
+    text-align: center;
+}
+
+
+.margin_top{
+    margin-top: 1rem;
+}
+.value_div{
+    font-size: 1.5rem;
+    padding-top: 0.5rem;
+    background-color: rgb(251, 235, 235);
+    color: brown;
+    font-weight: bold;
+}
+
+.btn{
+    border: none;
+    background-color: #ffffff;
+    font-size: 1.5rem;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    /* background-color: black; */
+    /* padding: 0.2rem; */
+}
+
+
+.inc_dec_box{
+    width: 12rem;
+    height: 3rem;
+    border-radius: 0.6rem;
+    margin: auto;
+    border: 0.01rem solid brown;
+    display: flex;
+    overflow: hidden;
+}
+
+
+.flex_item{
+    width: 34%;
+    height: 100%;
+    border: none;
+    outline: none;
+    
+}
+
+
+.dec{
+    border-right: 0.01rem solid brown;
+   
+}
+
+.dec button{
+    color: brown;
+}
+
+.inc_btn{
+    color: #FFFFFF;
+    background-color: rgb(174, 77, 77);
+
+}
+
+.value_div{
+    border-right: 0.01rem solid brown;
+}
